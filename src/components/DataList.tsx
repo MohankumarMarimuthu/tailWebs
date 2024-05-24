@@ -27,6 +27,7 @@ export default function BasicTable() {
   const [fetchId, setFetchId] = useState("");
   const [edit, setEdit] = useState(false);
   const dispatch = useDispatch();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const { data } = useSelector((state: any) => state?.studentData);
 
   const open = Boolean(anchorEl);

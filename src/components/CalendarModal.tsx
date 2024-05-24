@@ -3,7 +3,7 @@ import Modal from "@mui/material/Modal";
 import MyCalendar from "./MyCalendar";
 
 const style = {
-  position: "absolute" as "absolute",
+  position: "absolute" as const,
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
@@ -15,6 +15,7 @@ const style = {
   p: 4,
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function CalendarModal({ openCalendar, closeCalendar }: any) {
   const handleClose = () => {
     closeCalendar(false);

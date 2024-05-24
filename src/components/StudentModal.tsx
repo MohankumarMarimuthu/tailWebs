@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
@@ -50,6 +51,7 @@ export default function StudentModal({
       const { name, subject, marks, date } = editableData[0];
       setFormData({ name, subject, marks, date });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isEdit]);
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {

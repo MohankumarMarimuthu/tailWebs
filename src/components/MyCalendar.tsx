@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Avatar, Box, Button, IconButton, Typography } from "@mui/material";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import {

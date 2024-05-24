@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // reducer.js
 import { ADD_DATA, DELETE_DATA, EDIT_DATA } from "./actions";
 
